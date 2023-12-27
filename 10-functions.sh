@@ -5,10 +5,10 @@ ID=$(id -u)
 VALIDATE(){
     if [ $? -ne 0 ]
 then
-    echo "installing git is failed"
+    echo "installing is failed"
     exit 1
 else
-    echo "installing git is success"
+    echo "installing is success"
 fi
 }
 
