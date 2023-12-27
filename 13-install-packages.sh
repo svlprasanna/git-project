@@ -3,7 +3,7 @@
 ID=$(id -u)
 R="\e[31m"
 G="\e[32m"
-Y='\e[33m"
+Y="\e[33m"
 N="\e[0m"
 
 TIMESTAMP=$(date +%F-%H-%M-%S)
@@ -33,4 +33,7 @@ do
     then
     yum install $package -y
     VALIDATE $? "Installation of $package"
+    else
+    echo -e "$package is already installed... $Y skipping $N"
+    fi
 done
