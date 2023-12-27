@@ -10,3 +10,4 @@ echo "$person2 want to wish wish you all happy morning"
 
 DATE=$(date)
 echo "date and Time is ${DATE}"
+echo "Script started executing from ${DATE}"
